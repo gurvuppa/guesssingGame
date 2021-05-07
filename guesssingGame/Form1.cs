@@ -5,11 +5,6 @@
  * Mr. T
  * ICS3U
  * */
-
-
-
-
-
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,17 +20,14 @@ namespace guesssingGame
     public partial class Form1 : Form
     {
         Random randGen = new Random();
-
         int randNumb;
         public Form1()
         {
             InitializeComponent();
             randNumb = randGen.Next(1, 101);
         }
-
         private void guessButton_Click(object sender, EventArgs e)
         {
-
             int guess = Convert.ToInt32(inputBox.Text);
 
             if (randNumb < guess)
@@ -50,12 +42,6 @@ namespace guesssingGame
             {
                 outputLabel.Text = "Too Low";
             }
-
-
-
-
-
-
         }
     }
 }
